@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Exercice 5</title>
+  <link rel="stylesheet" href="style/style.css">
+  <script src="bonus.js"></script>
+</head>
+<body id="elem">
+  <div class="wrapper">
+    <div class="exercice">
+      <header>
+          5
+      </header>
+      <section>
+        <p>
+          Make the following buttons work. Respectively, the plus and minus button allow to increase and decrease the size of the font used on this web page.
+        </p>
+        <p>
+          The drop menu allows to change the background color. 
+        </p>
+      </section>
+      <footer>
+        <div>
+          <button id="plus">+</button>
+          <button id="moins">-</button>
+          <select onchange="colors()" id="colors">
+            <option value="">Background color</option>
+            <option value="#bdc3c7">Defaut</option>
+            <option value="#1abc9c">Turquoise</option>
+            <option value="#f1c40f">Sun Flower</option>
+            <option value="#d35400">Pumpkin</option>
+            <option value="#e74c3c">Alizarin</option>
+            <option value="#40d47e">Emerald</option>
+            <option value="#3498db">Peter River</option>
+          </select>
+        </div>
+      </footer>
+    </div>
+    <nav>
+      <a href="ex_04.html" class="btn prev">
+        &larr; Previous
+      </a>
+      <a href="ex_06.html" class="btn next">
+        Next &rarr;
+      </a>
+    </nav>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="script/ex_05.js"></script>
+</body>
+</html>
