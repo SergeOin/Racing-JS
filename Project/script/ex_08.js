@@ -1,9 +1,6 @@
-$("#layers").sortable({
-    update: function(event, ui) {
-        $("canvas").detach(); // Removes all canvases
-        $("#layers canvas").each(function() {
-            // Reinsert them in the same order of your list items
-            $("#" + $(this).data("canvas")).appendTo(whereYourCanvasesWere);
-        });
-    }
-}).disableSelection();
+$(document).ready(function(){
+    $("canvas:nth-of-type(1n+1)").css("background-color","orange")
+    $("canvas:nth-of-type(1n+5)").css("background-color","purple")
+    $("canvas:nth-of-type(1n+8)").css("background-color","black")
+    $("canvas:nth-of-type(1n+9)").css("background-color","green")
+})
