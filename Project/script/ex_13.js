@@ -3,8 +3,22 @@ let img = document.createElement("img")
 img.src = localStorage.getItem('ex_12.img')
 img.width = '500'
 img.height = '250'
-document.getElementById('button').appendChild(img)
+let divbutton = document.getElementById('button')
+divbutton.appendChild(img)
+
+let count = 0
+let hoverimg = window.setInterval.divbutton.addEventListener('mouseenter', function () {  
+    count++
+    
+
+})
+divbutton.addEventListener('mouseover', function () {  
+    img.width = '500'
+    img.height = '500'
+})
+
 
 $("#button").click(function() {
     localStorage.removeItem('ex_12.img');
 })
+
