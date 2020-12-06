@@ -1,7 +1,11 @@
 let styles = `
     #mydivheader {
+      position: absolute;
         cursor: move;
         z-index: 10;
+    }
+    #mydiv {
+      position: relative;
     }
 `
 let styleSheet = document.createElement("style")

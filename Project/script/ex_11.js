@@ -2,10 +2,10 @@ $(document).ready(function () {
   checkCookie()
 })
 $("#okcookie").click(function() {
- document.cookie = "acceptsCookie=true ; expires=24"  
+ document.cookie = "acceptsCookies=true ; expires=24"  
 })
 function checkCookie() {
-  let pos = document.cookie.indexOf( "acceptsCookie=true" );
+  let pos = document.cookie.indexOf( "acceptsCookies=true" );
   if(pos >= 0){
     $("#cookietext").empty()
     //création 
@@ -17,7 +17,7 @@ function checkCookie() {
     newButton.textContent = "Delete Cookie"
     newDiv.appendChild(newButton)
     $('#buttonInDiv').click(function() {
-      document.cookie = "acceptsCookie=true ; expires = Thu, 01 Jan 1970 00:00:01 GMT"
+      document.cookie = "acceptsCookies=true ; expires = Thu, 01 Jan 1970 00:00:01 GMT"
     })
   } else {
     //nothing

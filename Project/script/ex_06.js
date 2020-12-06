@@ -5,8 +5,8 @@ function Hero(name, classname, point, strength){
     this.strength = strength;
 }
 
-let mage = new Hero("amadeus", "mage", 10, 3);
-let guerrier = new Hero("pontius", "guerrier", 3, 10);
+let mage = new Hero("amadeus", "wizard", 10, 3);
+let guerrier = new Hero("pontius", "Warrior", 3, 10);
 mage.toString();
 guerrier.toString();
 
